@@ -1,0 +1,44 @@
+{
+  "validation": {
+    "maxChar": "not more then {{num}} characters",
+    "required": "it should be filled",
+    "requiredLength": "it must contains {{num}} characters",
+    "boardNotExist": "board not found",
+    "labelExist": "This label already exist"
+  },
+  "notification": {
+    "rejected": "Something went wrong",
+    "deleting": "Your {{entity}} successfully deleted"
+  },
+  "placeholder": {
+    "textLabelInput": "Input new text label",
+    "searchInput": "Input task name",
+    "colorSelect": "Color label",
+    "textSelect": "Text label"
+  },
+  "task": "task",
+  "tasks": "tasks",
+  "textLabelConfigButton": "Configure text label",
+
+  "weekButton": "Week",
+  "monthButton": "Month",
+  "sunday": "Sun",
+  "monday": "Mon",
+  "tuesday": "Tue",
+  "wednesday": "Wed",
+  "thursday": "Thu",
+  "friday": "Fri",
+  "saturday": "Sat",
+  "january": "January",
+  "february": "February",
+  "march": "Marh",
+  "april": "April",
+  "may": "May",
+  "june": "June",
+  "july": "July",
+  "august": "August",
+  "september": "September",
+  "october": "October",
+  "november": "November",
+  "december": "December"
+}
