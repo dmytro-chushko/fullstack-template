@@ -1,4 +1,4 @@
 export const enum AppRoute {
   HOME_PAGE = '/',
-  ITEM_DETAILS = '/:id',
+  ITEM_DETAILS = 'employee/:id',
 }

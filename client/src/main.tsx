@@ -5,10 +5,13 @@ import 'src/i18n/config';
 import App from './App.tsx';
 
 import { GlobalStyle } from './styles/global.styled.ts';
+import { AppThemeProvider } from './providers';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <GlobalStyle />
-    <App />
+    <AppThemeProvider>
+      <GlobalStyle />
+      <App />
+    </AppThemeProvider>
   </React.StrictMode>,
 );

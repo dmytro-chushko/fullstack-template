@@ -20,8 +20,7 @@ import { normalize } from 'styled-normalize';
 
 export const GlobalStyle = createGlobalStyle`
   ${css`
-    ${normalize}
-    /* * {
+    ${normalize}* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -56,7 +55,7 @@ export const GlobalStyle = createGlobalStyle`
       border: none;
 
       transition: ${({ theme }) => theme.common.transition};
-    } */
+    }
 
     ul,
     ol {
