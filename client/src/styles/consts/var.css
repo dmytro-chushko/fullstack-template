@@ -1,0 +1,1344 @@
+:root {
+  --material-theme-white: #fff;
+  --material-theme-black: #000;
+  --material-theme-source-seed: #0056d0;
+  --material-theme-sys-light-surface-tint: #0156d0;
+  --material-theme-sys-light-surface-tint-color: #0156d0;
+  --material-theme-sys-light-on-error-container: #410002;
+  --material-theme-sys-light-on-error: #fff;
+  --material-theme-sys-light-error-container: #ffdad6;
+  --material-theme-sys-light-on-tertiary-container: #300c33;
+  --material-theme-sys-light-on-tertiary: #fff;
+  --material-theme-sys-light-tertiary-container: #ffd6fb;
+  --material-theme-sys-light-tertiary: #7a507a;
+  --material-theme-sys-light-shadow: #000;
+  --material-theme-sys-light-error: #ba1a1a;
+  --material-theme-sys-light-outline: #757780;
+  --material-theme-sys-light-on-background: #1b1b1f;
+  --material-theme-sys-light-background: #fefbff;
+  --material-theme-sys-light-inverse-on-surface: #f2f0f4;
+  --material-theme-sys-light-inverse-surface: #303034;
+  --material-theme-sys-light-on-surface-variant: #44464f;
+  --material-theme-sys-light-on-surface: #1b1b1f;
+  --material-theme-sys-light-surface-variant: #e1e2ec;
+  --material-theme-sys-light-surface: #fefbff;
+  --material-theme-sys-light-on-secondary-container: #111b33;
+  --material-theme-sys-light-on-secondary: #fff;
+  --material-theme-sys-light-secondary-container: #dae2ff;
+  --material-theme-sys-light-secondary: #545e7a;
+  --material-theme-sys-light-inverse-primary: #b1c5ff;
+  --material-theme-sys-light-on-primary-container: #001847;
+  --material-theme-sys-light-on-primary: #fff;
+  --material-theme-sys-light-primary-container: #dae2ff;
+  --material-theme-sys-light-primary: #0156d0;
+  --material-theme-sys-light-outline-variant: #c5c6d0;
+  --material-theme-sys-light-scrim: #000;
+  --material-theme-sys-dark-surface-tint: #b1c5ff;
+  --material-theme-sys-dark-surface-tint-color: #b1c5ff;
+  --material-theme-sys-dark-on-error-container: #ffb4ab;
+  --material-theme-sys-dark-on-error: #690005;
+  --material-theme-sys-dark-error-container: #93000a;
+  --material-theme-sys-dark-on-tertiary-container: #ffd6fb;
+  --material-theme-sys-dark-on-tertiary: #472249;
+  --material-theme-sys-dark-tertiary-container: #603861;
+  --material-theme-sys-dark-tertiary: #eab6e7;
+  --material-theme-sys-dark-shadow: #000;
+  --material-theme-sys-dark-error: #ffb4ab;
+  --material-theme-sys-dark-outline: #8f9099;
+  --material-theme-sys-dark-on-background: #e4e2e6;
+  --material-theme-sys-dark-background: #1b1b1f;
+  --material-theme-sys-dark-inverse-on-surface: #303034;
+  --material-theme-sys-dark-inverse-surface: #e4e2e6;
+  --material-theme-sys-dark-on-surface-variant: #c5c6d0;
+  --material-theme-sys-dark-on-surface: #e4e2e6;
+  --material-theme-sys-dark-surface-variant: #44464f;
+  --material-theme-sys-dark-surface: #1b1b1f;
+  --material-theme-sys-dark-on-secondary-container: #dae2ff;
+  --material-theme-sys-dark-on-secondary: #26304a;
+  --material-theme-sys-dark-secondary-container: #3c4661;
+  --material-theme-sys-dark-secondary: #bcc6e6;
+  --material-theme-sys-dark-inverse-primary: #0156d0;
+  --material-theme-sys-dark-on-primary-container: #dae2ff;
+  --material-theme-sys-dark-on-primary: #002c72;
+  --material-theme-sys-dark-primary-container: #0040a0;
+  --material-theme-sys-dark-primary: #b1c5ff;
+  --material-theme-sys-dark-outline-variant: #44464f;
+  --material-theme-sys-dark-scrim: #000;
+  --material-theme-ref-error-error0: #000;
+  --material-theme-ref-error-error10: #410002;
+  --material-theme-ref-error-error20: #690005;
+  --material-theme-ref-error-error30: #93000a;
+  --material-theme-ref-error-error40: #ba1a1a;
+  --material-theme-ref-error-error50: #de3730;
+  --material-theme-ref-error-error60: #ff5449;
+  --material-theme-ref-error-error70: #ff897d;
+  --material-theme-ref-error-error80: #ffb4ab;
+  --material-theme-ref-error-error90: #ffdad6;
+  --material-theme-ref-error-error95: #ffedea;
+  --material-theme-ref-error-error99: #fffbff;
+  --material-theme-ref-error-error100: #fff;
+  --material-theme-ref-error-error5: #2d0001;
+  --material-theme-ref-error-error15: #540003;
+  --material-theme-ref-error-error25: #7e0007;
+  --material-theme-ref-error-error35: #a80710;
+  --material-theme-ref-error-error98: #fff8f7;
+  --material-theme-ref-primary-primary0: #000;
+  --material-theme-ref-primary-primary10: #001847;
+  --material-theme-ref-primary-primary20: #002c72;
+  --material-theme-ref-primary-primary30: #0040a0;
+  --material-theme-ref-primary-primary40: #0156d0;
+  --material-theme-ref-primary-primary50: #3471eb;
+  --material-theme-ref-primary-primary60: #5a8cff;
+  --material-theme-ref-primary-primary70: #88a9ff;
+  --material-theme-ref-primary-primary80: #b1c5ff;
+  --material-theme-ref-primary-primary90: #dae2ff;
+  --material-theme-ref-primary-primary95: #eef0ff;
+  --material-theme-ref-primary-primary99: #fefbff;
+  --material-theme-ref-primary-primary100: #fff;
+  --material-theme-ref-primary-primary5: #000f31;
+  --material-theme-ref-primary-primary15: #00225c;
+  --material-theme-ref-primary-primary25: #003688;
+  --material-theme-ref-primary-primary35: #004bb8;
+  --material-theme-ref-primary-primary98: #faf8ff;
+  --material-theme-ref-secondary-secondary0: #000;
+  --material-theme-ref-secondary-secondary10: #151b2c;
+  --material-theme-ref-secondary-secondary20: #2a3042;
+  --material-theme-ref-secondary-secondary30: #404659;
+  --material-theme-ref-secondary-secondary40: #585e71;
+  --material-theme-ref-secondary-secondary50: #71778b;
+  --material-theme-ref-secondary-secondary60: #8a90a5;
+  --material-theme-ref-secondary-secondary70: #a5abc1;
+  --material-theme-ref-secondary-secondary80: #c0c6dd;
+  --material-theme-ref-secondary-secondary90: #dce2f9;
+  --material-theme-ref-secondary-secondary95: #eef0ff;
+  --material-theme-ref-secondary-secondary99: #fefbff;
+  --material-theme-ref-secondary-secondary100: #fff;
+  --material-theme-ref-secondary-secondary5: #0a1021;
+  --material-theme-ref-secondary-secondary15: #1f2536;
+  --material-theme-ref-secondary-secondary25: #353b4d;
+  --material-theme-ref-secondary-secondary35: #4c5265;
+  --material-theme-ref-secondary-secondary98: #faf8ff;
+  --material-theme-ref-tertiary-tertiary0: #000;
+  --material-theme-ref-tertiary-tertiary10: #2b122c;
+  --material-theme-ref-tertiary-tertiary20: #412742;
+  --material-theme-ref-tertiary-tertiary30: #5a3d59;
+  --material-theme-ref-tertiary-tertiary40: #735472;
+  --material-theme-ref-tertiary-tertiary50: #8d6d8b;
+  --material-theme-ref-tertiary-tertiary60: #a886a6;
+  --material-theme-ref-tertiary-tertiary70: #c4a0c1;
+  --material-theme-ref-tertiary-tertiary80: #e1bbdd;
+  --material-theme-ref-tertiary-tertiary90: #fed7f9;
+  --material-theme-ref-tertiary-tertiary95: #ffebfa;
+  --material-theme-ref-tertiary-tertiary99: #fffbff;
+  --material-theme-ref-tertiary-tertiary100: #fff;
+  --material-theme-ref-tertiary-tertiary5: #1f0820;
+  --material-theme-ref-tertiary-tertiary15: #361d36;
+  --material-theme-ref-tertiary-tertiary25: #4d324d;
+  --material-theme-ref-tertiary-tertiary35: #664965;
+  --material-theme-ref-tertiary-tertiary98: #fff7fa;
+  --material-theme-ref-neutral-neutral0: #000;
+  --material-theme-ref-neutral-neutral10: #1b1b1f;
+  --material-theme-ref-neutral-neutral20: #303034;
+  --material-theme-ref-neutral-neutral30: #46464a;
+  --material-theme-ref-neutral-neutral40: #5e5e62;
+  --material-theme-ref-neutral-neutral50: #77777a;
+  --material-theme-ref-neutral-neutral60: #919094;
+  --material-theme-ref-neutral-neutral70: #acaaaf;
+  --material-theme-ref-neutral-neutral80: #c7c6ca;
+  --material-theme-ref-neutral-neutral90: #e4e2e6;
+  --material-theme-ref-neutral-neutral95: #f2f0f4;
+  --material-theme-ref-neutral-neutral99: #fefbff;
+  --material-theme-ref-neutral-neutral100: #fff;
+  --material-theme-ref-neutral-neutralnan: #fff;
+  --material-theme-ref-neutral-neutral5: #101114;
+  --material-theme-ref-neutral-neutral15: #252629;
+  --material-theme-ref-neutral-neutral25: #3b3b3f;
+  --material-theme-ref-neutral-neutral35: #525256;
+  --material-theme-ref-neutral-neutral98: #fbf8fd;
+  --material-theme-ref-neutral-variant-neutral-variant0: #000;
+  --material-theme-ref-neutral-variant-neutral-variant10: #191b23;
+  --material-theme-ref-neutral-variant-neutral-variant20: #2e3038;
+  --material-theme-ref-neutral-variant-neutral-variant30: #44464f;
+  --material-theme-ref-neutral-variant-neutral-variant40: #5c5e67;
+  --material-theme-ref-neutral-variant-neutral-variant50: #757780;
+  --material-theme-ref-neutral-variant-neutral-variant60: #8f9099;
+  --material-theme-ref-neutral-variant-neutral-variant70: #aaabb4;
+  --material-theme-ref-neutral-variant-neutral-variant80: #c5c6d0;
+  --material-theme-ref-neutral-variant-neutral-variant90: #e1e2ec;
+  --material-theme-ref-neutral-variant-neutral-variant95: #f0f0fa;
+  --material-theme-ref-neutral-variant-neutral-variant99: #fefbff;
+  --material-theme-ref-neutral-variant-neutral-variant100: #fff;
+  --material-theme-ref-neutral-variant-neutral-variant5: #0e1118;
+  --material-theme-ref-neutral-variant-neutral-variant15: #23262d;
+  --material-theme-ref-neutral-variant-neutral-variant25: #393b43;
+  --material-theme-ref-neutral-variant-neutral-variant35: #50525a;
+  --material-theme-ref-neutral-variant-neutral-variant98: #faf8ff;
+  --material-theme-surfaces-light-surface1: #fefbff;
+  --material-theme-surfaces-light-surface2: #fefbff;
+  --material-theme-surfaces-light-surface3: #fefbff;
+  --material-theme-surfaces-light-surface4: #fefbff;
+  --material-theme-surfaces-light-surface5: #fefbff;
+  --material-theme-surfaces-dark-surface1: #1b1b1f;
+  --material-theme-surfaces-dark-surface2: #1b1b1f;
+  --material-theme-surfaces-dark-surface3: #1b1b1f;
+  --material-theme-surfaces-dark-surface4: #1b1b1f;
+  --material-theme-surfaces-dark-surface5: #1b1b1f;
+  --material-theme-android-light-color-accent-primary: #dbe1ff;
+  --material-theme-android-light-color-accent-primary-variant: #0354d6;
+  --material-theme-android-light-text-color-primary: #1b1b1f;
+  --material-theme-android-light-text-color-primary-inverse: #f2f0f4;
+  --material-theme-android-light-color-accent-secondary: #dde1f9;
+  --material-theme-android-light-color-accent-secondary-variant: #585e71;
+  --material-theme-android-light-text-color-secondary: #45464f;
+  --material-theme-android-light-text-color-secondary-inverse: #c7c6ca;
+  --material-theme-android-light-color-accent-tertiary: #ffd6f9;
+  --material-theme-android-light-color-accent-tertiary-variant: #735471;
+  --material-theme-android-light-text-color-tertiary: #757680;
+  --material-theme-android-light-text-color-tertiary-inverse: #919094;
+  --material-theme-android-light-color-background: #f2f0f4;
+  --material-theme-android-light-color-background-floating: #fbf8fd;
+  --material-theme-android-light-color-surface: #fbf8fd;
+  --material-theme-android-light-color-surface-variant: #e4e2e6;
+  --material-theme-android-light-color-surface-highlight: #fff;
+  --material-theme-android-light-surface-header: #e4e2e6;
+  --material-theme-android-light-under-surface: #000;
+  --material-theme-android-light-off-state: #303034;
+  --material-theme-android-light-accent-surface: #eef0ff;
+  --material-theme-android-light-text-primary-on-accent: #1b1b1f;
+  --material-theme-android-light-text-secondary-on-accent: #45464f;
+  --material-theme-android-light-scrim: #c7c6ca;
+  --material-theme-android-light-volume-background: #3b3b3f;
+  --material-theme-android-light-coloraccentprimary: #dae2ff;
+  --material-theme-android-light-coloraccentprimaryvariant: #0156d0;
+  --material-theme-android-light-coloraccentsecondary: #dce2f9;
+  --material-theme-android-light-coloraccentsecondaryvariant: #585e71;
+  --material-theme-android-light-coloraccenttertiary: #fed7f9;
+  --material-theme-android-light-coloraccenttertiaryvariant: #735472;
+  --material-theme-android-light-textcolorprimary: #1b1b1f;
+  --material-theme-android-light-textcolorsecondary: #44464f;
+  --material-theme-android-light-textcolortertiary: #757780;
+  --material-theme-android-light-textcolorprimaryinverse: #f2f0f4;
+  --material-theme-android-light-textcolorsecondaryinverse: #c7c6ca;
+  --material-theme-android-light-textcolortertiaryinverse: #919094;
+  --material-theme-android-light-colorbackground: #f2f0f4;
+  --material-theme-android-light-colorbackgroundfloating: #fbf8fd;
+  --material-theme-android-light-colorsurface: #fbf8fd;
+  --material-theme-android-light-colorsurfacevariant: #e4e2e6;
+  --material-theme-android-light-colorsurfacehighlight: #fff;
+  --material-theme-android-light-surfaceheader: #e4e2e6;
+  --material-theme-android-light-undersurface: #000;
+  --material-theme-android-light-offstate: #303034;
+  --material-theme-android-light-accentsurface: #eef0ff;
+  --material-theme-android-light-textprimaryonaccent: #1b1b1f;
+  --material-theme-android-light-textsecondaryonaccent: #44464f;
+  --material-theme-android-light-volumebackground: #3b3b3f;
+  --material-theme-android-dark-color-accent-primary: #dbe1ff;
+  --material-theme-android-dark-color-accent-primary-variant: #8aa8ff;
+  --material-theme-android-dark-text-color-primary: #f2f0f4;
+  --material-theme-android-dark-text-color-primary-inverse: #1b1b1f;
+  --material-theme-android-dark-color-accent-secondary: #dde1f9;
+  --material-theme-android-dark-color-accent-secondary-variant: #a5aac1;
+  --material-theme-android-dark-text-color-secondary: #c5c6d0;
+  --material-theme-android-dark-text-color-secondary-inverse: #46464a;
+  --material-theme-android-dark-color-accent-tertiary: #ffd6f9;
+  --material-theme-android-dark-color-accent-tertiary-variant: #c5a0c0;
+  --material-theme-android-dark-text-color-tertiary: #8f909a;
+  --material-theme-android-dark-text-color-tertiary-inverse: #77767a;
+  --material-theme-android-dark-color-background: #1b1b1f;
+  --material-theme-android-dark-color-background-floating: #1b1b1f;
+  --material-theme-android-dark-color-surface: #303034;
+  --material-theme-android-dark-color-surface-variant: #46464a;
+  --material-theme-android-dark-color-surface-highlight: #525256;
+  --material-theme-android-dark-surface-header: #46464a;
+  --material-theme-android-dark-under-surface: #000;
+  --material-theme-android-dark-off-state: #303034;
+  --material-theme-android-dark-accent-surface: #eef0ff;
+  --material-theme-android-dark-text-primary-on-accent: #1b1b1f;
+  --material-theme-android-dark-text-secondary-on-accent: #45464f;
+  --material-theme-android-dark-scrim: #c7c6ca;
+  --material-theme-android-dark-volume-background: #3b3b3f;
+  --material-theme-android-dark-coloraccentprimary: #dae2ff;
+  --material-theme-android-dark-coloraccentprimaryvariant: #88a9ff;
+  --material-theme-android-dark-coloraccentsecondary: #dce2f9;
+  --material-theme-android-dark-coloraccentsecondaryvariant: #a5abc1;
+  --material-theme-android-dark-coloraccenttertiary: #fed7f9;
+  --material-theme-android-dark-coloraccenttertiaryvariant: #c4a0c1;
+  --material-theme-android-dark-textcolorprimary: #f2f0f4;
+  --material-theme-android-dark-textcolorsecondary: #c5c6d0;
+  --material-theme-android-dark-textcolortertiary: #8f9099;
+  --material-theme-android-dark-textcolorprimaryinverse: #1b1b1f;
+  --material-theme-android-dark-textcolorsecondaryinverse: #46464a;
+  --material-theme-android-dark-textcolortertiaryinverse: #77777a;
+  --material-theme-android-dark-colorbackground: #1b1b1f;
+  --material-theme-android-dark-colorbackgroundfloating: #1b1b1f;
+  --material-theme-android-dark-colorsurface: #303034;
+  --material-theme-android-dark-colorsurfacevariant: #46464a;
+  --material-theme-android-dark-colorsurfacehighlight: #525256;
+  --material-theme-android-dark-surfaceheader: #46464a;
+  --material-theme-android-dark-undersurface: #000;
+  --material-theme-android-dark-offstate: #303034;
+  --material-theme-android-dark-accentsurface: #eef0ff;
+  --material-theme-android-dark-textprimaryonaccent: #1b1b1f;
+  --material-theme-android-dark-textsecondaryonaccent: #44464f;
+  --material-theme-android-dark-volumebackground: #3b3b3f;
+  --material-theme-state-layers-light-primary-opacity-0.08: rgba(
+    1,
+    86,
+    208,
+    0.08
+  );
+  --material-theme-state-layers-light-primary-opacity-0.12: rgba(
+    1,
+    86,
+    208,
+    0.12
+  );
+  --material-theme-state-layers-light-primary-opacity-0.16: rgba(
+    1,
+    86,
+    208,
+    0.16
+  );
+  --material-theme-state-layers-light-on-primary-opacity-0.08: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-on-primary-opacity-0.12: rgba(
+    255,
+    255,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-on-primary-opacity-0.16: rgba(
+    255,
+    255,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-primary-container-opacity-0.08: rgba(
+    218,
+    226,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-primary-container-opacity-0.12: rgba(
+    218,
+    226,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-primary-container-opacity-0.16: rgba(
+    218,
+    226,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-on-primary-container-opacity-0.08: rgba(
+    0,
+    24,
+    71,
+    0.08
+  );
+  --material-theme-state-layers-light-on-primary-container-opacity-0.12: rgba(
+    0,
+    24,
+    71,
+    0.12
+  );
+  --material-theme-state-layers-light-on-primary-container-opacity-0.16: rgba(
+    0,
+    24,
+    71,
+    0.16
+  );
+  --material-theme-state-layers-light-secondary-opacity-0.08: rgba(
+    84,
+    94,
+    122,
+    0.08
+  );
+  --material-theme-state-layers-light-secondary-opacity-0.12: rgba(
+    84,
+    94,
+    122,
+    0.12
+  );
+  --material-theme-state-layers-light-secondary-opacity-0.16: rgba(
+    84,
+    94,
+    122,
+    0.16
+  );
+  --material-theme-state-layers-light-on-secondary-opacity-0.08: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-on-secondary-opacity-0.12: rgba(
+    255,
+    255,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-on-secondary-opacity-0.16: rgba(
+    255,
+    255,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-secondary-container-opacity-0.08: rgba(
+    218,
+    226,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-secondary-container-opacity-0.12: rgba(
+    218,
+    226,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-secondary-container-opacity-0.16: rgba(
+    218,
+    226,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-on-secondary-container-opacity-0.08: rgba(
+    17,
+    27,
+    51,
+    0.08
+  );
+  --material-theme-state-layers-light-on-secondary-container-opacity-0.12: rgba(
+    17,
+    27,
+    51,
+    0.12
+  );
+  --material-theme-state-layers-light-on-secondary-container-opacity-0.16: rgba(
+    17,
+    27,
+    51,
+    0.16
+  );
+  --material-theme-state-layers-light-tertiary-opacity-0.08: rgba(
+    122,
+    80,
+    122,
+    0.08
+  );
+  --material-theme-state-layers-light-tertiary-opacity-0.12: rgba(
+    122,
+    80,
+    122,
+    0.12
+  );
+  --material-theme-state-layers-light-tertiary-opacity-0.16: rgba(
+    122,
+    80,
+    122,
+    0.16
+  );
+  --material-theme-state-layers-light-on-tertiary-opacity-0.08: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-on-tertiary-opacity-0.12: rgba(
+    255,
+    255,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-on-tertiary-opacity-0.16: rgba(
+    255,
+    255,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-tertiary-container-opacity-0.08: rgba(
+    255,
+    214,
+    251,
+    0.08
+  );
+  --material-theme-state-layers-light-tertiary-container-opacity-0.12: rgba(
+    255,
+    214,
+    251,
+    0.12
+  );
+  --material-theme-state-layers-light-tertiary-container-opacity-0.16: rgba(
+    255,
+    214,
+    251,
+    0.16
+  );
+  --material-theme-state-layers-light-on-tertiary-container-opacity-0.08: rgba(
+    48,
+    12,
+    51,
+    0.08
+  );
+  --material-theme-state-layers-light-on-tertiary-container-opacity-0.12: rgba(
+    48,
+    12,
+    51,
+    0.12
+  );
+  --material-theme-state-layers-light-on-tertiary-container-opacity-0.16: rgba(
+    48,
+    12,
+    51,
+    0.16
+  );
+  --material-theme-state-layers-light-error-opacity-0.08: rgba(
+    186,
+    26,
+    26,
+    0.08
+  );
+  --material-theme-state-layers-light-error-opacity-0.12: rgba(
+    186,
+    26,
+    26,
+    0.12
+  );
+  --material-theme-state-layers-light-error-opacity-0.16: rgba(
+    186,
+    26,
+    26,
+    0.16
+  );
+  --material-theme-state-layers-light-on-error-opacity-0.08: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-on-error-opacity-0.12: rgba(
+    255,
+    255,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-on-error-opacity-0.16: rgba(
+    255,
+    255,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-error-container-opacity-0.08: rgba(
+    255,
+    218,
+    214,
+    0.08
+  );
+  --material-theme-state-layers-light-error-container-opacity-0.12: rgba(
+    255,
+    218,
+    214,
+    0.12
+  );
+  --material-theme-state-layers-light-error-container-opacity-0.16: rgba(
+    255,
+    218,
+    214,
+    0.16
+  );
+  --material-theme-state-layers-light-on-error-container-opacity-0.08: rgba(
+    65,
+    0,
+    2,
+    0.08
+  );
+  --material-theme-state-layers-light-on-error-container-opacity-0.12: rgba(
+    65,
+    0,
+    2,
+    0.12
+  );
+  --material-theme-state-layers-light-on-error-container-opacity-0.16: rgba(
+    65,
+    0,
+    2,
+    0.16
+  );
+  --material-theme-state-layers-light-background-opacity-0.08: rgba(
+    254,
+    251,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-background-opacity-0.12: rgba(
+    254,
+    251,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-background-opacity-0.16: rgba(
+    254,
+    251,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-on-background-opacity-0.08: rgba(
+    27,
+    27,
+    31,
+    0.08
+  );
+  --material-theme-state-layers-light-on-background-opacity-0.12: rgba(
+    27,
+    27,
+    31,
+    0.12
+  );
+  --material-theme-state-layers-light-on-background-opacity-0.16: rgba(
+    27,
+    27,
+    31,
+    0.16
+  );
+  --material-theme-state-layers-light-surface-opacity-0.08: rgba(
+    254,
+    251,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-surface-opacity-0.12: rgba(
+    254,
+    251,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-surface-opacity-0.16: rgba(
+    254,
+    251,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-on-surface-opacity-0.08: rgba(
+    27,
+    27,
+    31,
+    0.08
+  );
+  --material-theme-state-layers-light-on-surface-opacity-0.12: rgba(
+    27,
+    27,
+    31,
+    0.12
+  );
+  --material-theme-state-layers-light-on-surface-opacity-0.16: rgba(
+    27,
+    27,
+    31,
+    0.16
+  );
+  --material-theme-state-layers-light-surface-variant-opacity-0.08: rgba(
+    225,
+    226,
+    236,
+    0.08
+  );
+  --material-theme-state-layers-light-surface-variant-opacity-0.12: rgba(
+    225,
+    226,
+    236,
+    0.12
+  );
+  --material-theme-state-layers-light-surface-variant-opacity-0.16: rgba(
+    225,
+    226,
+    236,
+    0.16
+  );
+  --material-theme-state-layers-light-on-surface-variant-opacity-0.08: rgba(
+    68,
+    70,
+    79,
+    0.08
+  );
+  --material-theme-state-layers-light-on-surface-variant-opacity-0.12: rgba(
+    68,
+    70,
+    79,
+    0.12
+  );
+  --material-theme-state-layers-light-on-surface-variant-opacity-0.16: rgba(
+    68,
+    70,
+    79,
+    0.16
+  );
+  --material-theme-state-layers-light-outline-opacity-0.08: rgba(
+    117,
+    119,
+    128,
+    0.08
+  );
+  --material-theme-state-layers-light-outline-opacity-0.12: rgba(
+    117,
+    119,
+    128,
+    0.12
+  );
+  --material-theme-state-layers-light-outline-opacity-0.16: rgba(
+    117,
+    119,
+    128,
+    0.16
+  );
+  --material-theme-state-layers-light-shadow-opacity-0.08: rgba(0, 0, 0, 0.08);
+  --material-theme-state-layers-light-shadow-opacity-0.12: rgba(0, 0, 0, 0.12);
+  --material-theme-state-layers-light-shadow-opacity-0.16: rgba(0, 0, 0, 0.16);
+  --material-theme-state-layers-light-inverse-surface-opacity-0.08: rgba(
+    48,
+    48,
+    52,
+    0.08
+  );
+  --material-theme-state-layers-light-inverse-surface-opacity-0.12: rgba(
+    48,
+    48,
+    52,
+    0.12
+  );
+  --material-theme-state-layers-light-inverse-surface-opacity-0.16: rgba(
+    48,
+    48,
+    52,
+    0.16
+  );
+  --material-theme-state-layers-light-inverse-on-surface-opacity-0.08: rgba(
+    242,
+    240,
+    244,
+    0.08
+  );
+  --material-theme-state-layers-light-inverse-on-surface-opacity-0.12: rgba(
+    242,
+    240,
+    244,
+    0.12
+  );
+  --material-theme-state-layers-light-inverse-on-surface-opacity-0.16: rgba(
+    242,
+    240,
+    244,
+    0.16
+  );
+  --material-theme-state-layers-light-inverse-primary-opacity-0.08: rgba(
+    177,
+    197,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-light-inverse-primary-opacity-0.12: rgba(
+    177,
+    197,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-light-inverse-primary-opacity-0.16: rgba(
+    177,
+    197,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-light-surface-tint-opacity-0.08: rgba(
+    1,
+    86,
+    208,
+    0.08
+  );
+  --material-theme-state-layers-light-surface-tint-opacity-0.12: rgba(
+    1,
+    86,
+    208,
+    0.12
+  );
+  --material-theme-state-layers-light-surface-tint-opacity-0.16: rgba(
+    1,
+    86,
+    208,
+    0.16
+  );
+  --material-theme-state-layers-light-surface-tint-color-opacity-0.08: rgba(
+    1,
+    86,
+    208,
+    0.08
+  );
+  --material-theme-state-layers-light-surface-tint-color-opacity-0.12: rgba(
+    1,
+    86,
+    208,
+    0.12
+  );
+  --material-theme-state-layers-light-surface-tint-color-opacity-0.16: rgba(
+    1,
+    86,
+    208,
+    0.16
+  );
+  --material-theme-state-layers-light-outline-variant-opacity-0.08: rgba(
+    197,
+    198,
+    208,
+    0.08
+  );
+  --material-theme-state-layers-light-outline-variant-opacity-0.12: rgba(
+    197,
+    198,
+    208,
+    0.12
+  );
+  --material-theme-state-layers-light-outline-variant-opacity-0.16: rgba(
+    197,
+    198,
+    208,
+    0.16
+  );
+  --material-theme-state-layers-light-scrim-opacity-0.08: rgba(0, 0, 0, 0.08);
+  --material-theme-state-layers-light-scrim-opacity-0.12: rgba(0, 0, 0, 0.12);
+  --material-theme-state-layers-light-scrim-opacity-0.16: rgba(0, 0, 0, 0.16);
+  --material-theme-state-layers-dark-primary-opacity-0.08: rgba(
+    177,
+    197,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-dark-primary-opacity-0.12: rgba(
+    177,
+    197,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-dark-primary-opacity-0.16: rgba(
+    177,
+    197,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-primary-opacity-0.08: rgba(
+    0,
+    44,
+    114,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-primary-opacity-0.12: rgba(
+    0,
+    44,
+    114,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-primary-opacity-0.16: rgba(
+    0,
+    44,
+    114,
+    0.16
+  );
+  --material-theme-state-layers-dark-primary-container-opacity-0.08: rgba(
+    0,
+    64,
+    160,
+    0.08
+  );
+  --material-theme-state-layers-dark-primary-container-opacity-0.12: rgba(
+    0,
+    64,
+    160,
+    0.12
+  );
+  --material-theme-state-layers-dark-primary-container-opacity-0.16: rgba(
+    0,
+    64,
+    160,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-primary-container-opacity-0.08: rgba(
+    218,
+    226,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-primary-container-opacity-0.12: rgba(
+    218,
+    226,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-primary-container-opacity-0.16: rgba(
+    218,
+    226,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-dark-secondary-opacity-0.08: rgba(
+    188,
+    198,
+    230,
+    0.08
+  );
+  --material-theme-state-layers-dark-secondary-opacity-0.12: rgba(
+    188,
+    198,
+    230,
+    0.12
+  );
+  --material-theme-state-layers-dark-secondary-opacity-0.16: rgba(
+    188,
+    198,
+    230,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-secondary-opacity-0.08: rgba(
+    38,
+    48,
+    74,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-secondary-opacity-0.12: rgba(
+    38,
+    48,
+    74,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-secondary-opacity-0.16: rgba(
+    38,
+    48,
+    74,
+    0.16
+  );
+  --material-theme-state-layers-dark-secondary-container-opacity-0.08: rgba(
+    60,
+    70,
+    97,
+    0.08
+  );
+  --material-theme-state-layers-dark-secondary-container-opacity-0.12: rgba(
+    60,
+    70,
+    97,
+    0.12
+  );
+  --material-theme-state-layers-dark-secondary-container-opacity-0.16: rgba(
+    60,
+    70,
+    97,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-secondary-container-opacity-0.08: rgba(
+    218,
+    226,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-secondary-container-opacity-0.12: rgba(
+    218,
+    226,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-secondary-container-opacity-0.16: rgba(
+    218,
+    226,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-dark-tertiary-opacity-0.08: rgba(
+    234,
+    182,
+    231,
+    0.08
+  );
+  --material-theme-state-layers-dark-tertiary-opacity-0.12: rgba(
+    234,
+    182,
+    231,
+    0.12
+  );
+  --material-theme-state-layers-dark-tertiary-opacity-0.16: rgba(
+    234,
+    182,
+    231,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-tertiary-opacity-0.08: rgba(
+    71,
+    34,
+    73,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-tertiary-opacity-0.12: rgba(
+    71,
+    34,
+    73,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-tertiary-opacity-0.16: rgba(
+    71,
+    34,
+    73,
+    0.16
+  );
+  --material-theme-state-layers-dark-tertiary-container-opacity-0.08: rgba(
+    96,
+    56,
+    97,
+    0.08
+  );
+  --material-theme-state-layers-dark-tertiary-container-opacity-0.12: rgba(
+    96,
+    56,
+    97,
+    0.12
+  );
+  --material-theme-state-layers-dark-tertiary-container-opacity-0.16: rgba(
+    96,
+    56,
+    97,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-tertiary-container-opacity-0.08: rgba(
+    255,
+    214,
+    251,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-tertiary-container-opacity-0.12: rgba(
+    255,
+    214,
+    251,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-tertiary-container-opacity-0.16: rgba(
+    255,
+    214,
+    251,
+    0.16
+  );
+  --material-theme-state-layers-dark-error-opacity-0.08: rgba(
+    255,
+    180,
+    171,
+    0.08
+  );
+  --material-theme-state-layers-dark-error-opacity-0.12: rgba(
+    255,
+    180,
+    171,
+    0.12
+  );
+  --material-theme-state-layers-dark-error-opacity-0.16: rgba(
+    255,
+    180,
+    171,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-error-opacity-0.08: rgba(
+    105,
+    0,
+    5,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-error-opacity-0.12: rgba(
+    105,
+    0,
+    5,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-error-opacity-0.16: rgba(
+    105,
+    0,
+    5,
+    0.16
+  );
+  --material-theme-state-layers-dark-error-container-opacity-0.08: rgba(
+    147,
+    0,
+    10,
+    0.08
+  );
+  --material-theme-state-layers-dark-error-container-opacity-0.12: rgba(
+    147,
+    0,
+    10,
+    0.12
+  );
+  --material-theme-state-layers-dark-error-container-opacity-0.16: rgba(
+    147,
+    0,
+    10,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-error-container-opacity-0.08: rgba(
+    255,
+    180,
+    171,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-error-container-opacity-0.12: rgba(
+    255,
+    180,
+    171,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-error-container-opacity-0.16: rgba(
+    255,
+    180,
+    171,
+    0.16
+  );
+  --material-theme-state-layers-dark-background-opacity-0.08: rgba(
+    27,
+    27,
+    31,
+    0.08
+  );
+  --material-theme-state-layers-dark-background-opacity-0.12: rgba(
+    27,
+    27,
+    31,
+    0.12
+  );
+  --material-theme-state-layers-dark-background-opacity-0.16: rgba(
+    27,
+    27,
+    31,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-background-opacity-0.08: rgba(
+    228,
+    226,
+    230,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-background-opacity-0.12: rgba(
+    228,
+    226,
+    230,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-background-opacity-0.16: rgba(
+    228,
+    226,
+    230,
+    0.16
+  );
+  --material-theme-state-layers-dark-surface-opacity-0.08: rgba(
+    27,
+    27,
+    31,
+    0.08
+  );
+  --material-theme-state-layers-dark-surface-opacity-0.12: rgba(
+    27,
+    27,
+    31,
+    0.12
+  );
+  --material-theme-state-layers-dark-surface-opacity-0.16: rgba(
+    27,
+    27,
+    31,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-surface-opacity-0.08: rgba(
+    228,
+    226,
+    230,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-surface-opacity-0.12: rgba(
+    228,
+    226,
+    230,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-surface-opacity-0.16: rgba(
+    228,
+    226,
+    230,
+    0.16
+  );
+  --material-theme-state-layers-dark-surface-variant-opacity-0.08: rgba(
+    68,
+    70,
+    79,
+    0.08
+  );
+  --material-theme-state-layers-dark-surface-variant-opacity-0.12: rgba(
+    68,
+    70,
+    79,
+    0.12
+  );
+  --material-theme-state-layers-dark-surface-variant-opacity-0.16: rgba(
+    68,
+    70,
+    79,
+    0.16
+  );
+  --material-theme-state-layers-dark-on-surface-variant-opacity-0.08: rgba(
+    197,
+    198,
+    208,
+    0.08
+  );
+  --material-theme-state-layers-dark-on-surface-variant-opacity-0.12: rgba(
+    197,
+    198,
+    208,
+    0.12
+  );
+  --material-theme-state-layers-dark-on-surface-variant-opacity-0.16: rgba(
+    197,
+    198,
+    208,
+    0.16
+  );
+  --material-theme-state-layers-dark-outline-opacity-0.08: rgba(
+    143,
+    144,
+    153,
+    0.08
+  );
+  --material-theme-state-layers-dark-outline-opacity-0.12: rgba(
+    143,
+    144,
+    153,
+    0.12
+  );
+  --material-theme-state-layers-dark-outline-opacity-0.16: rgba(
+    143,
+    144,
+    153,
+    0.16
+  );
+  --material-theme-state-layers-dark-shadow-opacity-0.08: rgba(0, 0, 0, 0.08);
+  --material-theme-state-layers-dark-shadow-opacity-0.12: rgba(0, 0, 0, 0.12);
+  --material-theme-state-layers-dark-shadow-opacity-0.16: rgba(0, 0, 0, 0.16);
+  --material-theme-state-layers-dark-inverse-surface-opacity-0.08: rgba(
+    228,
+    226,
+    230,
+    0.08
+  );
+  --material-theme-state-layers-dark-inverse-surface-opacity-0.12: rgba(
+    228,
+    226,
+    230,
+    0.12
+  );
+  --material-theme-state-layers-dark-inverse-surface-opacity-0.16: rgba(
+    228,
+    226,
+    230,
+    0.16
+  );
+  --material-theme-state-layers-dark-inverse-on-surface-opacity-0.08: rgba(
+    48,
+    48,
+    52,
+    0.08
+  );
+  --material-theme-state-layers-dark-inverse-on-surface-opacity-0.12: rgba(
+    48,
+    48,
+    52,
+    0.12
+  );
+  --material-theme-state-layers-dark-inverse-on-surface-opacity-0.16: rgba(
+    48,
+    48,
+    52,
+    0.16
+  );
+  --material-theme-state-layers-dark-inverse-primary-opacity-0.08: rgba(
+    1,
+    86,
+    208,
+    0.08
+  );
+  --material-theme-state-layers-dark-inverse-primary-opacity-0.12: rgba(
+    1,
+    86,
+    208,
+    0.12
+  );
+  --material-theme-state-layers-dark-inverse-primary-opacity-0.16: rgba(
+    1,
+    86,
+    208,
+    0.16
+  );
+  --material-theme-state-layers-dark-surface-tint-opacity-0.08: rgba(
+    177,
+    197,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-dark-surface-tint-opacity-0.12: rgba(
+    177,
+    197,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-dark-surface-tint-opacity-0.16: rgba(
+    177,
+    197,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-dark-surface-tint-color-opacity-0.08: rgba(
+    177,
+    197,
+    255,
+    0.08
+  );
+  --material-theme-state-layers-dark-surface-tint-color-opacity-0.12: rgba(
+    177,
+    197,
+    255,
+    0.12
+  );
+  --material-theme-state-layers-dark-surface-tint-color-opacity-0.16: rgba(
+    177,
+    197,
+    255,
+    0.16
+  );
+  --material-theme-state-layers-dark-outline-variant-opacity-0.08: rgba(
+    68,
+    70,
+    79,
+    0.08
+  );
+  --material-theme-state-layers-dark-outline-variant-opacity-0.12: rgba(
+    68,
+    70,
+    79,
+    0.12
+  );
+  --material-theme-state-layers-dark-outline-variant-opacity-0.16: rgba(
+    68,
+    70,
+    79,
+    0.16
+  );
+  --material-theme-state-layers-dark-scrim-opacity-0.08: rgba(0, 0, 0, 0.08);
+  --material-theme-state-layers-dark-scrim-opacity-0.12: rgba(0, 0, 0, 0.12);
+  --material-theme-state-layers-dark-scrim-opacity-0.16: rgba(0, 0, 0, 0.16);
+  --easy-ui-kit-spacer-color: #f00;
+  --easy-ui-kit-backdrop-gradient-color: #e2eeff;
+  --easy-ui-kit-annotations-color: #9747ff;
+  --easy-ui-kit-accent-color: #0254d6;
+}

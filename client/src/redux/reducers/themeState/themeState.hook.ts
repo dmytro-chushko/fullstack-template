@@ -4,7 +4,7 @@ import { setThemeLight } from './themeState.reducer';
 
 export const getThemeLight = (state: RootState) => state.theme.isDark;
 
-export const useGetThemeIsDark = () => {
+export const useGetThemeState = () => {
   return useAppSelector(getThemeLight);
 };
 
