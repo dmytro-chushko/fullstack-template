@@ -1,1 +1,1 @@
-export * from './IContent';
+export * from './IThemeColor';

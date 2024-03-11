@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
 import {
-  persistReducer,
   persistStore,
   FLUSH,
   REHYDRATE,
@@ -10,12 +9,13 @@ import {
   REGISTER,
 } from 'redux-persist';
 
-import { themePersistConfig } from './persist-configs/themePersist.config';
-import { themeState } from './reducers/themeState/themeState.reducer';
+import { persistedThemeReducer } from './persist-configs';
+import { loader } from './reducers/loader';
 
 export const store = configureStore({
   reducer: {
-    theme: persistReducer(themePersistConfig, themeState.reducer),
+    theme: persistedThemeReducer,
+    loader: loader.reducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

@@ -1,8 +1,8 @@
+import { IThemeColor } from 'src/types/theme/IThemeColor';
+import { defaultDark, defaultLight } from './color-themes/default';
 import { ICommon, common } from './consts/common';
 import { IFont, font } from './consts/font';
 import { ISize, size } from './consts/size';
-import { defaultDark, defaultLight } from './color-themes/default';
-import { IThemeColor } from 'src/types/IThemeColor';
 
 export interface ITheme {
   color: IThemeColor;
@@ -12,7 +12,7 @@ export interface ITheme {
 }
 
 export const theme = (isDark: boolean): ITheme => ({
-  color: isDark ? defaultLight : defaultDark,
+  color: isDark ? defaultDark : defaultLight,
   font,
   size,
   common,
