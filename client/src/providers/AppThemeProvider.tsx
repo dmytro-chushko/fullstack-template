@@ -9,7 +9,7 @@ interface IAppThemeProviderProps {
 }
 
 export const AppThemeProvider = ({ children }: IAppThemeProviderProps) => {
-  const { isDark } = useGetThemeState();
+  const isDark = useGetThemeState();
   const currentTheme = useMemo(() => theme(isDark), [isDark]);
 
   return <ThemeProvider theme={currentTheme}>{children}</ThemeProvider>;

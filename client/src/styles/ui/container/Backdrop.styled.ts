@@ -16,7 +16,7 @@ export const Backdrop = styled.div<IBackdrop>`
   width: 100vw;
   height: 100svh;
 
-  background-color: ${({ theme }) => theme.color.onBackgroundOpacity0_08};
+  background-color: ${({ theme }) => theme.color.onBackground.opacity0_08};
   pointer-events: ${({ $isOpen }) => ($isOpen ? 'auto' : 'none')};
   opacity: ${({ $isOpen }) => ($isOpen ? 1 : 0)};
   backdrop-filter: blur(2px);
