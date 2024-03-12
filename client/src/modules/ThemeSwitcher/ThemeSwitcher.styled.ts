@@ -10,6 +10,8 @@ export const Wrapper = styled.div`
 
   cursor: pointer;
 
+  transition: ${({ theme }) => theme.common.transition};
+
   &:hover {
     color: ${({ theme }) => theme.color.primary.default};
   }
