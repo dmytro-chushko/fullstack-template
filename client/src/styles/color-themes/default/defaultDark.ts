@@ -15,4 +15,11 @@ export const defaultDark: IThemeColor = {
     default: '#002c72',
     opacity0_12: 'rgba(0, 44, 114, 0.12)',
   },
+  surfaceVariant: { default: '#44464f' },
+  onSurfaceVariant: { default: '#c5c6d0' },
+  outline: { default: '#8f9099' },
+  outlineVariant: {
+    default: '#44464f',
+    opacity0_12: 'rgba(68, 70, 79, 0.12)',
+  },
 };

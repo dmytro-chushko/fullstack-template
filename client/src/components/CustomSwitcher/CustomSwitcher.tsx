@@ -1,17 +1,35 @@
-import { SwitcherBox, SwitcherTrigger } from './CustomSwitcher.styled';
+import { useState } from 'react';
+import {
+  SwitcherBox,
+  SwitcherInput,
+  SwitcherLabel,
+  SwitcherTrigger,
+} from './CustomSwitcher.styled';
 
 interface ICustomSwitcherProps {
   isTurnedOn?: boolean;
-  onClick?: () => void;
+  onSwitch?: () => void;
 }
 
 export const CustomSwitcher = ({
   isTurnedOn = false,
-  onClick,
+  onSwitch,
 }: ICustomSwitcherProps) => {
+  const [isChecked, setIsChecked] = useState<boolean>(isTurnedOn || false);
+
+  const handleClick = () => setIsChecked(!isChecked);
+
   return (
-    <SwitcherBox onClick={onClick}>
-      <SwitcherTrigger $isTurnedOn={isTurnedOn} />
-    </SwitcherBox>
+    <SwitcherLabel>
+      <SwitcherBox isTurnedOn={isTurnedOn} disabled={false}>
+        <SwitcherInput
+          type="checkbox"
+          checked={isChecked}
+          onClick={handleClick}
+          onChange={onSwitch}
+        />
+        <SwitcherTrigger />
+      </SwitcherBox>
+    </SwitcherLabel>
   );
 };

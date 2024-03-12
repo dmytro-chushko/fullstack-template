@@ -15,4 +15,11 @@ export const defaultLight: IThemeColor = {
     default: '#ffffff',
     opacity0_12: 'rgba(255, 255, 255, 0.12)',
   },
+  surfaceVariant: { default: '#e1e2ec' },
+  onSurfaceVariant: { default: '#44464f' },
+  outline: { default: '#757780' },
+  outlineVariant: {
+    default: '#c5c6d0',
+    opacity0_12: 'rgba(197, 198, 208, 0.12)',
+  },
 };

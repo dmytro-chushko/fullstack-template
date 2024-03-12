@@ -10,5 +10,5 @@ export const ThemeSwitcher = () => {
 
   const handleSwitchTheme = () => setThemeLight(!isDark);
 
-  return <CustomSwitcher isTurnedOn={isDark} onClick={handleSwitchTheme} />;
+  return <CustomSwitcher isTurnedOn={isDark} onSwitch={handleSwitchTheme} />;
 };
