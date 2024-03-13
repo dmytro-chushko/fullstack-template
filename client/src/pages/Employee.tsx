@@ -1,5 +1,9 @@
+import { useTranslation } from 'react-i18next';
+
 const Employee = () => {
-  return <div>Employee</div>;
+  const { t } = useTranslation();
+
+  return <div>{t('employee')}</div>;
 };
 
 export default Employee;

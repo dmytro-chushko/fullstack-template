@@ -1,9 +1,9 @@
+import { ReactComponent as Moon } from 'src/assets/moon.svg';
+import { ReactComponent as Sun } from 'src/assets/sun.svg';
 import {
   useGetThemeState,
   useSetThemeLight,
 } from 'src/redux/reducers/themeState';
-import { ReactComponent as Sun } from 'src/assets/sun.svg';
-import { ReactComponent as Moon } from 'src/assets/moon.svg';
 
 import * as Styled from './ThemeSwitcher.styled';
 
@@ -15,7 +15,11 @@ export const ThemeSwitcher = () => {
 
   return (
     <Styled.Wrapper onClick={handleSwitchTheme}>
-      {isDark ? <Moon /> : <Sun />}
+      {isDark ? (
+        <Moon width="1.5rem" height="1.5rem" />
+      ) : (
+        <Sun width="1.5rem" height="1.5rem" />
+      )}
     </Styled.Wrapper>
   );
 };

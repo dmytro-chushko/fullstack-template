@@ -6,11 +6,15 @@ export interface IThemeColor {
   };
   primary: {
     default: string;
+    opacity0_05: string;
+    opacity0_16: string;
   };
   onPrimary: {
     default: string;
     opacity0_12: string;
   };
+  inversePrimary: { default: string };
+  secondaryContainer: { default: string };
   surfaceVariant: {
     default: string;
   };

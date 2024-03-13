@@ -3,9 +3,12 @@ import { Outlet } from 'react-router-dom';
 
 import { Header } from '..';
 
-import { BodyContainer } from './Bode.styled';
+import { BodyContainer } from './Body.styled';
+import { useTranslation } from 'react-i18next';
 
 export const Body = () => {
+  const { t } = useTranslation();
+
   return (
     <BodyContainer>
       <header>
@@ -16,7 +19,7 @@ export const Body = () => {
           <Outlet />
         </Suspense>
       </main>
-      <footer>Footer</footer>
+      <footer>{t('footer')}</footer>
     </BodyContainer>
   );
 };

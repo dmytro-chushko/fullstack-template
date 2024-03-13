@@ -10,11 +10,15 @@ export const defaultLight: IThemeColor = {
   },
   primary: {
     default: '#0156d0',
+    opacity0_05: 'rgba(1, 86, 208, 0.05)',
+    opacity0_16: 'rgba(1, 86, 208, 0.16)',
   },
   onPrimary: {
     default: '#ffffff',
     opacity0_12: 'rgba(255, 255, 255, 0.12)',
   },
+  inversePrimary: { default: '#b1c5ff' },
+  secondaryContainer: { default: '#dae2ff' },
   surfaceVariant: { default: '#e1e2ec' },
   onSurfaceVariant: { default: '#44464f' },
   outline: { default: '#757780' },
