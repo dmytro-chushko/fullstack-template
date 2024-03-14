@@ -1,7 +1,7 @@
 {
   "validation": {
-    "maxChar": "not more then {{num}} characters",
-    "required": "it should be filled",
+    "maxChar": "не більше {{num}} символів",
+    "required": "має бути заповнено",
     "requiredLength": "it must contains {{num}} characters",
     "boardNotExist": "board not found",
     "labelExist": "This label already exist"
@@ -11,7 +11,7 @@
     "deleting": "Your {{entity}} successfully deleted"
   },
   "placeholder": {
-    "textLabelInput": "Input new text label",
+    "textLabelInput": "Введіть нове ім'я",
     "searchInput": "Input task name",
     "colorSelect": "Color label",
     "textSelect": "Text label"

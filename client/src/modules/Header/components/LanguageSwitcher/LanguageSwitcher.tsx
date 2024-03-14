@@ -17,6 +17,7 @@ export const LanguageSwitcher = () => {
       options={options}
       defaultValue={localStorage.getItem('i18nextLng') || options[0].value}
       onSelect={changeLanguage}
+      label="Lang"
     />
   );
 };

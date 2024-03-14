@@ -5,5 +5,6 @@ export const HeaderBox = styled.div`
   align-items: center;
   gap: ${({ theme }) => theme.size.general.s};
 
-  padding: ${({ theme }) => theme.size.general.s};
+  padding-top: ${({ theme }) => theme.size.general.s};
+  padding-bottom: ${({ theme }) => theme.size.general.s};
 `;

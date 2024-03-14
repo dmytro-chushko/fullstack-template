@@ -39,7 +39,7 @@ export const CustomInput = styled(InputBase)`
 
 export const CustomInputLabel = styled(InputLabel)`
   &.MuiInputLabel-root {
-    color: ${({ theme }) => theme.color.onBackground.default};
+    color: ${({ theme }) => theme.color.outline.default};
     background-color: ${({ theme }) => theme.color.background.default};
   }
 `;

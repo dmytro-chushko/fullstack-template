@@ -26,4 +26,9 @@ export const defaultDark: IThemeColor = {
     default: '#44464f',
     opacity0_12: 'rgba(68, 70, 79, 0.12)',
   },
+  error: {
+    default: '#ffb4ab',
+    opacity0_16: 'rgba(255, 180, 171, 0.16)',
+  },
+  errorContainer: { default: '#93000a' },
 };

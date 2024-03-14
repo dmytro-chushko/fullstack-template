@@ -1,6 +1,7 @@
-import { ThemeSwitcher } from '../ThemeSwitcher';
+import { ThemeSwitcher } from './components';
+import { LanguageSwitcher } from './components';
+
 import { HeaderBox } from './Header.styled';
-import { LanguageSwitcher } from './components/LanguageSwitcher';
 
 export const Header = () => {
   return (

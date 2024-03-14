@@ -24,4 +24,9 @@ export interface IThemeColor {
     default: string;
     opacity0_12: string;
   };
+  error: {
+    default: string;
+    opacity0_16: string;
+  };
+  errorContainer: { default: string };
 }
