@@ -5,6 +5,7 @@ import { v4 } from 'uuid';
 import { ReactComponent as ChevronDown } from 'src/assets/chevron-down.svg';
 
 import * as Styled from './CustomSelect.styled';
+import { CustomInputBase, CustomInputLabel } from 'src/styles/ui/input';
 
 interface IOption {
   value: string;
@@ -48,16 +49,14 @@ export const CustomSelect = ({
 
   return (
     <FormControl>
-      {label && (
-        <Styled.CustomInputLabel htmlFor={id}>{label}</Styled.CustomInputLabel>
-      )}
+      {label && <CustomInputLabel htmlFor={id}>{label}</CustomInputLabel>}
       <Select
         ref={containerRef}
         id={id}
         value={value}
         autoWidth
         onChange={handleChange}
-        input={<Styled.CustomInput />}
+        input={<CustomInputBase />}
         IconComponent={ChevronDown}
         {...(label ? { label } : {})}
         MenuProps={{

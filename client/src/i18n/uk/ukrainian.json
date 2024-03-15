@@ -16,6 +16,9 @@
     "colorSelect": "Color label",
     "textSelect": "Text label"
   },
+  "label": {
+    "name": "Ім'я"
+  },
   "employees": "Працівники",
   "employee": "Првцівник",
   "footer": "Підвал"

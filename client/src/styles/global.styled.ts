@@ -68,6 +68,19 @@ export const GlobalStyle = createGlobalStyle`
       outline: none;
     }
 
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px
+        ${({ theme }) => theme.color.background.default} inset !important;
+    }
+
+    input:-webkit-autofill {
+      -webkit-text-fill-color: ${({ theme }) =>
+        theme.color.onBackground.default} !important;
+    }
+
     img {
       display: block;
       height: auto;

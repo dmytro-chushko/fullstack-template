@@ -16,6 +16,9 @@
     "colorSelect": "Color label",
     "textSelect": "Text label"
   },
+  "label": {
+    "name": "Name"
+  },
   "employees": "Employees",
   "employee": "Employee",
   "footer": "Footer"

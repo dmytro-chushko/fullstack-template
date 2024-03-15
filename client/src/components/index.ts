@@ -1,4 +1,4 @@
 export * from './MainLoader';
 export * from './CustomSwitcher';
 export * from './CustomSelect';
-export * from './CustomInput';
+export * from './CustomInput3';
