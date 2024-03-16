@@ -8,7 +8,7 @@ import {
   CustomInputLabel,
 } from 'src/styles/ui/input';
 
-interface ICustomInput2Props<T extends FieldValues>
+interface ICustomInputProps<T extends FieldValues>
   extends InputBaseComponentProps {
   control: Control<T>;
   name: Path<T>;
@@ -20,7 +20,7 @@ export const CustomInput = <T extends FieldValues>({
   name,
   label,
   ...inputProps
-}: ICustomInput2Props<T>) => {
+}: ICustomInputProps<T>) => {
   const id = v4();
   const {
     field,
@@ -28,10 +28,11 @@ export const CustomInput = <T extends FieldValues>({
   } = useController({ name, control });
 
   return (
-    <FormControl error={invalid}>
+    <FormControl fullWidth error={invalid}>
       {label && <CustomInputLabel htmlFor={id}>{label}</CustomInputLabel>}
       <CustomInputBase
         id={id}
+        fullWidth
         {...(label ? { label } : {})}
         {...field}
         error={invalid}

@@ -1,40 +1,33 @@
-import { FormControl, Select, SelectChangeEvent } from '@mui/material';
+import { FormControl, Select } from '@mui/material';
 import { useEffect, useRef, useState } from 'react';
+import { Control, FieldValues, Path, useController } from 'react-hook-form';
 import { v4 } from 'uuid';
 
 import { ReactComponent as ChevronDown } from 'src/assets/chevron-down.svg';
 
-import * as Styled from './CustomSelect.styled';
 import { CustomInputBase, CustomInputLabel } from 'src/styles/ui/input';
+import { IOption } from 'src/types/ui';
 
-interface IOption {
-  value: string;
-  label: string;
-}
+import * as Styled from './CustomSelect.styled';
 
-interface ICustomSelectProps {
+interface ICustomSelectProps<T extends FieldValues> {
   options: IOption[];
-  defaultValue: string;
+  control: Control<T>;
+  name: Path<T>;
   label?: string;
-  onSelect?: (value: string) => void;
 }
 
-export const CustomSelect = ({
+export const CustomSelect = <T extends FieldValues>({
   options,
-  defaultValue,
+  control,
+  name,
   label,
-  onSelect,
-}: ICustomSelectProps) => {
-  const [value, setValue] = useState<string>(defaultValue);
+}: ICustomSelectProps<T>) => {
   const [containerPosition, setContainerPosition] = useState<number>(0);
   const [containerWidth, setContainerWidth] = useState<number>(0);
   const containerRef = useRef<HTMLInputElement>(null);
+  const { field } = useController({ control, name });
   const id = v4();
-
-  const handleChange = (e: SelectChangeEvent<string>) => {
-    setValue(e.target.value);
-    onSelect && onSelect(e.target.value);
-  };
 
   useEffect(() => {
     setContainerPosition(
@@ -48,15 +41,14 @@ export const CustomSelect = ({
   }, [containerRef]);
 
   return (
-    <FormControl>
+    <FormControl fullWidth>
       {label && <CustomInputLabel htmlFor={id}>{label}</CustomInputLabel>}
       <Select
+        {...field}
         ref={containerRef}
         id={id}
-        value={value}
         autoWidth
-        onChange={handleChange}
-        input={<CustomInputBase />}
+        input={<CustomInputBase fullWidth />}
         IconComponent={ChevronDown}
         {...(label ? { label } : {})}
         MenuProps={{

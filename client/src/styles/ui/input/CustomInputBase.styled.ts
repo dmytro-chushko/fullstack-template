@@ -7,17 +7,17 @@ export const CustomInputBase = styled(InputBase)`
     padding: ${({ theme }) => theme.size.general.s};
 
     border: 0.0625rem solid ${({ theme }) => theme.color.outline.default};
-    border-radius: 0.375rem;
+    border-radius: ${({ theme }) => theme.common.inputBorderRadius};
   }
 
   &:hover {
-    border-radius: 0.375rem;
+    border-radius: ${({ theme }) => theme.common.inputBorderRadius};
     box-shadow: 0 0 0 0.25rem
       ${({ theme }) => theme.color.secondaryContainer.default};
   }
 
   &.Mui-focused {
-    border-radius: 0.375rem;
+    border-radius: ${({ theme }) => theme.common.inputBorderRadius};
     box-shadow: 0 0 0 0.25rem
       ${({ theme }) => theme.color.inversePrimary.default};
   }

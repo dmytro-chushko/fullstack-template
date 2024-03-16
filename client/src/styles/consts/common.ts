@@ -2,9 +2,11 @@ import { color } from './color';
 
 export const common = {
   transition: 'all ease-in-out 0.2s',
+  inputBorderRadius: '0.375rem',
   borderRadius: '0.5rem',
   innerBorderRadius: '0.25rem',
   inputBorder: `0 0.125rem 0.125rem -0.125rem ${color.black}`,
+  inputBoxShadowSize: `0 0 0 0.25rem`,
   errorInputBorder: `0 0.125rem 0.125rem -0.125rem ${color.error}`,
   searchInputBorder: `0 0 0 0.125rem ${color.secondary}`,
   errorSearchInputBorder: `0 0 0 0.125rem ${color.error}`,

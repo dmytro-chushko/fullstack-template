@@ -19,6 +19,9 @@
   "label": {
     "name": "Ім'я"
   },
+  "button": {
+    "add": "Додати"
+  },
   "employees": "Працівники",
   "employee": "Првцівник",
   "footer": "Підвал"

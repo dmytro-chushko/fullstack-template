@@ -70,14 +70,14 @@ export const OptionItem = styled(MenuItem)`
   }
 
   &.MuiMenuItem-root.Mui-selected {
-    border-radius: 0.325rem;
+    border-radius: ${({ theme }) => theme.common.inputBorderRadius};
 
     background-color: ${({ theme }) => theme.color.primary.opacity0_16};
   }
 
   &.MuiMenuItem-root:hover,
   &.MuiMenuItem-root.Mui-selected:hover {
-    border-radius: 0.325rem;
+    border-radius: ${({ theme }) => theme.common.inputBorderRadius};
 
     background-color: ${({ theme }) => theme.color.surfaceVariant.default};
   }

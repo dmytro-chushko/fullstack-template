@@ -15,6 +15,7 @@ export const defaultDark: IThemeColor = {
   },
   onPrimary: {
     default: '#002c72',
+    opacity0_08: 'rgba(0, 44, 114, 0.08)',
     opacity0_12: 'rgba(0, 44, 114, 0.12)',
   },
   inversePrimary: { default: '#0156d0' },

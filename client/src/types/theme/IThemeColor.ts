@@ -11,6 +11,7 @@ export interface IThemeColor {
   };
   onPrimary: {
     default: string;
+    opacity0_08: string;
     opacity0_12: string;
   };
   inversePrimary: { default: string };
