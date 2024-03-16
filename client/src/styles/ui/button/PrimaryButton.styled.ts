@@ -14,7 +14,6 @@ export const PrimaryButton = styled(ButtonBase).attrs({ variant: 'contained' })`
         ${({ theme }) => theme.color.onPrimary.opacity0_08},
         ${({ theme }) => theme.color.onPrimary.opacity0_08}
       );
-      box-shadow: none;
     }
 
     &:focus {
@@ -23,8 +22,18 @@ export const PrimaryButton = styled(ButtonBase).attrs({ variant: 'contained' })`
         ${({ theme }) => theme.color.onPrimary.opacity0_12},
         ${({ theme }) => theme.color.onPrimary.opacity0_12}
       );
-      box-shadow: ${({ theme }) =>
-        `${theme.common.inputBoxShadowSize} ${theme.color.inversePrimary.default}`};
+    }
+
+    &:active {
+      background-image: linear-gradient(
+        to right,
+        ${({ theme }) => theme.color.onPrimary.opacity0_16},
+        ${({ theme }) => theme.color.onPrimary.opacity0_16}
+      );
+    }
+
+    &:disabled {
+      background-color: ${({ theme }) => theme.color.onBackground.opacity0_12};
     }
   }
 `;

@@ -3,16 +3,21 @@ export interface IThemeColor {
   onBackground: {
     default: string;
     opacity0_08: string;
+    opacity0_12: string;
+    opacity0_38: string;
   };
   primary: {
     default: string;
     opacity0_05: string;
+    opacity0_08: string;
+    opacity0_12: string;
     opacity0_16: string;
   };
   onPrimary: {
     default: string;
     opacity0_08: string;
     opacity0_12: string;
+    opacity0_16: string;
   };
   inversePrimary: { default: string };
   secondaryContainer: { default: string };

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import AddIcon from '@mui/icons-material/Add';
 import { CustomInput } from 'src/components/CustomInput';
-import { PrimaryButton } from 'src/styles/ui/button';
+import { OutlinedButton, PrimaryButton } from 'src/styles/ui/button';
 import { IAddForm } from 'src/types/form';
 import { useAddFormSchema } from 'src/utils/validation/useAddFormSchema';
 
@@ -28,6 +28,7 @@ export const AddForm = () => {
         control={control}
       />
       <PrimaryButton startIcon={<AddIcon />}>{t('button.add')}</PrimaryButton>
+      <OutlinedButton startIcon={<AddIcon />}>{t('button.add')}</OutlinedButton>
     </form>
   );
 };
