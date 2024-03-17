@@ -2,3 +2,4 @@ export * from './MainLoader';
 export * from './CustomSwitcher';
 export * from './CustomSelect';
 export * from './CustomInput3';
+export * from './CustomCheckbox';

@@ -7,6 +7,7 @@ import { CustomInput } from 'src/components/CustomInput';
 import { OutlinedButton, PrimaryButton } from 'src/styles/ui/button';
 import { IAddForm } from 'src/types/form';
 import { useAddFormSchema } from 'src/utils/validation/useAddFormSchema';
+import { CustomCheckbox } from 'src/components';
 
 export const AddForm = () => {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ export const AddForm = () => {
       />
       <PrimaryButton startIcon={<AddIcon />}>{t('button.add')}</PrimaryButton>
       <OutlinedButton startIcon={<AddIcon />}>{t('button.add')}</OutlinedButton>
+      <CustomCheckbox />
     </form>
   );
 };
