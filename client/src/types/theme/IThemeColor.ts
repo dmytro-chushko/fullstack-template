@@ -37,5 +37,6 @@ export interface IThemeColor {
     opacity0_12: string;
     opacity0_16: string;
   };
+  onError: { default: string };
   errorContainer: { default: string };
 }

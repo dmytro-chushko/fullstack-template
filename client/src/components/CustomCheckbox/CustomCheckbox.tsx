@@ -1,3 +1,4 @@
+import CheckIcon from '@mui/icons-material/Check';
 import {
   Checkbox,
   CheckboxProps,
@@ -5,6 +6,7 @@ import {
   FormControlLabel,
 } from '@mui/material';
 import { Control, FieldValues, Path, useController } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 
 import {
   CustomCheckboxCheckedIcon,
@@ -24,6 +26,7 @@ export const CustomCheckbox = <T extends FieldValues>({
   label,
   ...checkboxProps
 }: ICustomCheckbox<T>) => {
+  const { t } = useTranslation();
   const {
     field,
     fieldState: { error, invalid },
@@ -35,7 +38,7 @@ export const CustomCheckbox = <T extends FieldValues>({
       {...checkboxProps}
       disableRipple
       icon={<CustomCheckboxIcon />}
-      checkedIcon={<CustomCheckboxCheckedIcon />}
+      checkedIcon={<CheckedIconWrapper />}
     />
   );
 
@@ -46,7 +49,19 @@ export const CustomCheckbox = <T extends FieldValues>({
       ) : (
         renderCheckbox()
       )}
-      <CustomHelperText>{error?.message}</CustomHelperText>
+      {error && (
+        <CustomHelperText>
+          {t(...JSON.parse(error?.message || ''))}
+        </CustomHelperText>
+      )}
     </FormControl>
   );
 };
+
+function CheckedIconWrapper() {
+  return (
+    <CustomCheckboxCheckedIcon>
+      <CheckIcon fontSize="small" />
+    </CustomCheckboxCheckedIcon>
+  );
+}

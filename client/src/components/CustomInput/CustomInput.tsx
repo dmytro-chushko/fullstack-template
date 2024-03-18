@@ -1,6 +1,7 @@
 import { FormControl, InputBaseComponentProps } from '@mui/material';
 import { Control, FieldValues, Path, useController } from 'react-hook-form';
 import { v4 } from 'uuid';
+import { useTranslation } from 'react-i18next';
 
 import {
   CustomHelperText,
@@ -22,6 +23,7 @@ export const CustomInput = <T extends FieldValues>({
   ...inputProps
 }: ICustomInputProps<T>) => {
   const id = v4();
+  const { t } = useTranslation();
   const {
     field,
     fieldState: { error, invalid },
@@ -38,7 +40,11 @@ export const CustomInput = <T extends FieldValues>({
         error={invalid}
         inputProps={inputProps}
       />
-      <CustomHelperText>{error?.message}</CustomHelperText>
+      {error && (
+        <CustomHelperText>
+          {t(JSON.parse(error?.message || ''))}
+        </CustomHelperText>
+      )}
     </FormControl>
   );
 };

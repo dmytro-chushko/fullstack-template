@@ -39,5 +39,6 @@ export const defaultLight: IThemeColor = {
     opacity0_12: 'rgba(186, 26, 26, 0.12)',
     opacity0_16: 'rgba(186, 26, 26, 0.16)',
   },
+  onError: { default: '#ffffff' },
   errorContainer: { default: '#ffdad6' },
 };
