@@ -2,6 +2,7 @@
   "validation": {
     "maxChar": "not more then {{num}} characters",
     "required": "it should be filled",
+    "requiredIsChecked": "Must be checked",
     "requiredLength": "it must contains {{num}} characters",
     "boardNotExist": "board not found",
     "labelExist": "This label already exist"
@@ -17,7 +18,8 @@
     "textSelect": "Text label"
   },
   "label": {
-    "name": "Name"
+    "name": "Name",
+    "isChecked": "Do you agree with terms?"
   },
   "button": {
     "add": "Add"

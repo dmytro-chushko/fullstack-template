@@ -2,6 +2,7 @@
   "validation": {
     "maxChar": "не більше {{num}} символів",
     "required": "має бути заповнено",
+    "requiredIsChecked": "Має бути відмічено",
     "requiredLength": "it must contains {{num}} characters",
     "boardNotExist": "board not found",
     "labelExist": "This label already exist"
@@ -17,7 +18,8 @@
     "textSelect": "Text label"
   },
   "label": {
-    "name": "Ім'я"
+    "name": "Ім'я",
+    "isChecked": "Чи погоджуєтесь ви з умовами?"
   },
   "button": {
     "add": "Додати"

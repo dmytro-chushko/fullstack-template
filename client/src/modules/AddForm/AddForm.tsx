@@ -3,17 +3,17 @@ import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 
 import AddIcon from '@mui/icons-material/Add';
+import { CustomCheckbox } from 'src/components';
 import { CustomInput } from 'src/components/CustomInput';
 import { OutlinedButton, PrimaryButton } from 'src/styles/ui/button';
 import { IAddForm } from 'src/types/form';
 import { useAddFormSchema } from 'src/utils/validation/useAddFormSchema';
-import { CustomCheckbox } from 'src/components';
 
 export const AddForm = () => {
   const { t } = useTranslation();
   const schema = useAddFormSchema();
   const { control, handleSubmit } = useForm<IAddForm>({
-    defaultValues: { name: '' },
+    defaultValues: { name: '', isChecked: false },
     resolver: yupResolver(schema),
   });
 
@@ -28,9 +28,15 @@ export const AddForm = () => {
         label={t('label.name')}
         control={control}
       />
-      <PrimaryButton startIcon={<AddIcon />}>{t('button.add')}</PrimaryButton>
+      <CustomCheckbox
+        label={t('label.isChecked')}
+        control={control}
+        name="isChecked"
+      />
+      <PrimaryButton type="submit" startIcon={<AddIcon />}>
+        {t('button.add')}
+      </PrimaryButton>
       <OutlinedButton startIcon={<AddIcon />}>{t('button.add')}</OutlinedButton>
-      <CustomCheckbox />
     </form>
   );
 };

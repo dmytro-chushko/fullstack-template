@@ -1,6 +1,7 @@
 import { IThemeColor } from 'src/types/theme';
 
 export const defaultLight: IThemeColor = {
+  isDark: false,
   background: {
     default: '#fefbff',
   },
@@ -34,6 +35,8 @@ export const defaultLight: IThemeColor = {
   },
   error: {
     default: '#ba1a1a',
+    opacity0_08: 'rgba(186, 26, 26, 0.08)',
+    opacity0_12: 'rgba(186, 26, 26, 0.12)',
     opacity0_16: 'rgba(186, 26, 26, 0.16)',
   },
   errorContainer: { default: '#ffdad6' },

@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-import checkIcon from 'src/assets/check-icon.svg';
+import checkIconDark from 'src/assets/check-icon-dark.svg';
+import checkIconLight from 'src/assets/check-icon-light.svg';
 import { CustomCheckboxIcon } from '.';
 
 export const CustomCheckboxCheckedIcon = styled(CustomCheckboxIcon)`
@@ -30,8 +31,32 @@ export const CustomCheckboxCheckedIcon = styled(CustomCheckboxIcon)`
     width: 1.375rem;
     height: 1.375rem;
 
-    background-image: url(${checkIcon});
+    ${({ theme }) =>
+      theme.color.isDark
+        ? css`
+            background-image: url(${checkIconDark});
+          `
+        : css`
+            background-image: url(${checkIconLight});
+          `}
     background-position: center;
     background-size: cover;
+  }
+
+  .Mui-error > .MuiCheckbox-root > & {
+    background-color: ${({ theme }) => theme.color.error.default};
+    border-color: ${({ theme }) => theme.color.error.default};
+  }
+
+  .Mui-error > .MuiCheckbox-root > input:hover ~ & {
+    background-color: ${({ theme }) => theme.color.error.default};
+  }
+
+  .Mui-error > .MuiCheckbox-root > input:focus ~ & {
+    background-color: ${({ theme }) => theme.color.error.default};
+  }
+
+  .Mui-error > .MuiCheckbox-root > input:active ~ & {
+    background-color: ${({ theme }) => theme.color.error.default};
   }
 `;

@@ -1,4 +1,5 @@
 export interface IThemeColor {
+  isDark: boolean;
   background: { default: string };
   onBackground: {
     default: string;
@@ -32,6 +33,8 @@ export interface IThemeColor {
   };
   error: {
     default: string;
+    opacity0_08: string;
+    opacity0_12: string;
     opacity0_16: string;
   };
   errorContainer: { default: string };

@@ -27,4 +27,24 @@ export const CustomCheckboxIcon = styled.span`
   input:disabled ~ & {
     border-color: ${({ theme }) => theme.color.onBackground.opacity0_38};
   }
+
+  .Mui-error > .MuiCheckbox-root > & {
+    border-color: ${({ theme }) => theme.color.error.default};
+  }
+
+  .Mui-error > .MuiCheckbox-root > input:hover ~ & {
+    background-color: ${({ theme }) => theme.color.error.opacity0_08};
+    box-shadow: 0 0 0 0.25rem ${({ theme }) => theme.color.error.opacity0_08};
+  }
+
+  .Mui-error > .MuiCheckbox-root > input:focus ~ & {
+    background-color: ${({ theme }) => theme.color.error.opacity0_12};
+    box-shadow: 0 0 0 0.25rem
+      ${({ theme }) => theme.color.errorContainer.default};
+  }
+
+  .Mui-error > .MuiCheckbox-root > input:active ~ & {
+    background-color: ${({ theme }) => theme.color.error.opacity0_16};
+    box-shadow: none;
+  }
 `;
