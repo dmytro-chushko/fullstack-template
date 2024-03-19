@@ -19,7 +19,11 @@
   },
   "label": {
     "name": "Name",
-    "isChecked": "Do you agree with terms?"
+    "isChecked": "Do you agree with terms?",
+    "gender": "Gender",
+    "genderMale": "Male",
+    "genderFemale": "Female",
+    "genderOther": "Other"
   },
   "button": {
     "add": "Add"

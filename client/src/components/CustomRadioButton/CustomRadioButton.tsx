@@ -5,7 +5,7 @@ interface ICustomRadioBattonProps extends RadioProps {
   label: string;
 }
 
-export const CustomRadioBatton = ({
+export const CustomRadioButton = ({
   label,
   ...radioProps
 }: ICustomRadioBattonProps) => {

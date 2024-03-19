@@ -1,1 +1,1 @@
-export * from './CustomRadioBatton';
+export * from './CustomRadioButton';

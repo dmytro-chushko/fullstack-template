@@ -34,7 +34,11 @@ export const CustomRadioGroup = <T extends FieldValues>({
       <RadioGroup {...field} {...radioGroupProps}>
         {children}
       </RadioGroup>
-      <CustomHelperText>{t(JSON.parse(error?.message || ''))}</CustomHelperText>
+      {invalid && (
+        <CustomHelperText>
+          {t(JSON.parse(error?.message || ''))}
+        </CustomHelperText>
+      )}
     </FormControl>
   );
 };

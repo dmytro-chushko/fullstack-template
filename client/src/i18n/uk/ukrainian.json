@@ -19,7 +19,11 @@
   },
   "label": {
     "name": "Ім'я",
-    "isChecked": "Чи погоджуєтесь ви з умовами?"
+    "isChecked": "Чи погоджуєтесь ви з умовами?",
+    "gender": "Стать",
+    "genderMale": "Чоловіча",
+    "genderFemale": "Жіноча",
+    "genderOther": "Інша"
   },
   "button": {
     "add": "Додати"
